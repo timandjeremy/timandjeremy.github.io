@@ -1,0 +1,33 @@
+# Site settings
+title:
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Tim Macdonald and Jeremy Ward are a touring Scottish fiddle duo who
+  combine traditional fiddling with historical scholarship to create a
+  “cutting edge” musical experience that has been described as anything
+  from “metal” to “baroque.” Using period instruments and mixing High
+  Baroque chamber music with high-energy dance tunes, their
+  18th-century Scottish aesthetic brings a fresh perspective to the
+  tradition.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# User setting
+owner: Tim Macdonald & Jeremy Ward
+email: tim@timandjeremy.com
+facebook_username: timnjeremy
+twitter_username: timandjeremy
+soundcloud_username: timandjeremy
+youtube_username: tsmacdonald
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here
+telephone:
+copyright:
+
+# API settings
+google_api_key:
+
+# Build settings
+markdown: kramdown

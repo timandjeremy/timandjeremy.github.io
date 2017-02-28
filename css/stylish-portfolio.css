@@ -283,6 +283,7 @@ a {
 table.calendar {
   background: none;
   border: none;
+  text-align: left;
 }
 
 table.calendar a {
@@ -338,6 +339,7 @@ table.calendar tr:nth-of-type(2n) {
 
 .calendar-season-title {
   cursor: pointer;
+  text-align: left;
 }
 
 .calendar-season-title-arrow {

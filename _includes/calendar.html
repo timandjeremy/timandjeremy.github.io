@@ -2,136 +2,38 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Upcoming Performances</h2>
+        {% capture currentUnixTimestamp %}{{ "now" | date: "%s" }}{% endcapture %}
+
+        <h2>Upcoming performances</h2>
         <table class="calendar">
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">21</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://newberryconsort.org/">
-                The Clown—Kemp's Jig, with the Newberry Consort
-              </a>
-              <span class="calendar-location-and-time">
-                Ruggles Hall &bull;
-                The Newberry Library &bull;
-                60 W Walton St. &bull;
-                Chicago, IL &bull;
-                8pm
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">22</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://newberryconsort.org/">
-                The Clown—Kemp's Jig, with the Newberry Consort
-              </a>
-              <span class="calendar-location-and-time">
-                Logan Center for the Arts &bull;
-                The University of Chicago &bull;
-                915 E 60th St &bull;
-                Chicago, IL &bull;
-                8pm
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">23</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://newberryconsort.org/">
-                The Clown—Kemp's Jig, with the Newberry Consort
-              </a>
-              <span class="calendar-location-and-time">
-                Galvin Recital Hall &bull;
-                Northwestern University &bull;
-                70 Arts Circle Drive &bull;
-                Evanston, IL &bull;
-                3pm
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">27</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://www.musicplockton.org/">
-                Workshop: "Scottish-Baroque Techniques for the Modern Fiddler"
-              </a>
-              <span class="calendar-location-and-time">
-                National Centre of Excellence in Traditional Music &bull;
-                The Pupil Residence, Plockton High School &bull;
-                Plockton, Wester Ross, Scotland &bull;
-                4pm
-              </span>
-            </td>
-          </tr>
-           <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Jan.</span>
-              <span class="calendar-date-day">21</span>
-              <span class="calendar-date-year">2017</span>
-            </td>
-            <td class="calendar-content">
-              <a href="https://rscdschicago.wordpress.com/special-events/">
-                RSCDS Chicago New Year's Ball
-              </a>
-              <span class="calendar-location-and-time">
-                Baker Center &bull;
-                101 S 2nd St. &bull;
-                St. Charles, IL &bull;
-                7pm
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">27</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://www.plockton.com/">
-                Concert in the Plockton Village Hall
-              </a>
-              <span class="calendar-location-and-time">
-                Plockton Village Hall &bull;
-                Harbour St. &bull;
-                Plockton, Wester Ross, Scotland &bull;
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="calendar-date">
-              <span class="calendar-date-month">Oct.</span>
-              <span class="calendar-date-day">30</span>
-              <span class="calendar-date-year">2016</span>
-            </td>
-            <td class="calendar-content">
-              <a href="http://www.glenfiddich.com/uk/explore/latest-events/glenfiddich-fiddle-championship/">
-                Glenfiddich Fiddle Celebration
-              </a>
-              <span class="calendar-location-and-time">
-                Blair Castle &bull;
-                Blair Atholl, Perthshire, Scotland &bull;
-                2pm
-              </span>
-            </td>
-          </tr>
+          {%for event in site.data.calendar.last.events %}
+            {% capture eventUnixTimestamp %}{{ event.date | date: "%s" }}{% endcapture %}
+
+            {% if eventUnixTimestamp > currentUnixTimestamp %}
+              {% include custom/calendar_event.html pastOrFuture="future" %}
+            {% endif %}
+          {% endfor %}
         </table>
+
+        <h2>Past performances</h2>
+        {%for season in site.data.calendar reversed %}
+          <h3 class="calendar-season-title">
+            {{ season.season }}
+            <span class="calendar-season-title-arrow">&#9656;</span>
+          </h3>
+          <div class="calendar-season">
+            <table class="calendar">
+              {%for event in season.events %}
+                {% capture eventUnixTimestamp %}{{ event.date | date: "%s" }}{% endcapture %}
+                {% if eventUnixTimestamp < currentUnixTimestamp %}
+                  {% include custom/calendar_event.html pastOrFuture="past" %}
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+        {% endfor %}
+
+        <p>Interested in having Tim and Jeremy play at your event? <a href="#contact">Book them now!</a></p>
       </div>
     </div>
   </div>

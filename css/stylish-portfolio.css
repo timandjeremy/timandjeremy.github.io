@@ -29,6 +29,10 @@ body {
     font-weight: 700;
 }
 
+h1,h2,h3 {
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {

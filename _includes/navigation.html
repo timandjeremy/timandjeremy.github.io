@@ -3,19 +3,19 @@
   <ul class="sidebar-nav">
     <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
     <li class="sidebar-brand">
-      <a href="#top"  onclick = $("#menu-close").click(); >Tim and Jeremy</a>
+      <a href="#top"  onclick = "$('#menu-close').click(); ga('send', 'event', 'NavigationHome', 'click');">Tim and Jeremy</a>
     </li>
     <li>
-      <a href="#about" onclick = $("#menu-close").click(); >About</a>
+      <a href="#about"  onclick = "$('#menu-close').click(); ga('send', 'event', 'NavigationAbout', 'click');">About</a>
     </li>
     <li>
-      <a href="#listen" onclick = $("#menu-close").click(); >Listen</a>
+      <a href="#listen"  onclick = "$('#menu-close').click(); ga('send', 'event', 'NavigationListen', 'click');">Watch &amp; Listen</a>
     </li>
     <li>
-      <a href="#calendar" onclick = $("#menu-close").click(); >Calendar</a>
+      <a href="#calendar"  onclick = "$('#menu-close').click(); ga('send', 'event', 'NavigationCalendar', 'click');">Calendar</a>
     </li>
     <li>
-      <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+      <a href="#contact"  onclick = "$('#menu-close').click(); ga('send', 'event', 'NavigationContact', 'click');">Contact</a>
     </li>
   </ul>
 </nav>

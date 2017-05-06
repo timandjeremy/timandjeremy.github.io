@@ -283,6 +283,19 @@ a {
   margin: 1em;
 }
 
+.yt-subscribe-container {
+  margin-bottom: 5px;
+}
+
+.yt-subscribe {
+  background-color: white;
+  padding-top: 10px;
+}
+
+.subscribe-text {
+  color: #333;
+}
+
 table.calendar {
   background: none;
   border: none;

@@ -202,6 +202,21 @@
     title: "[House Concert](https://www.facebook.com/events/483172498473587)"
     location: "Moon Township (near Pittsburgh), PA"
 
+  - date: 2017-04-07
+    time: 7pm
+    title: "House Concert"
+    location: "Medina, OH"
+
+  - date: 2017-04-08
+    time: 11:30am
+    title: "[Brunch House Concert](https://www.facebook.com/events/1877013912511538)"
+    location: "Cleveland, OH"
+
+  - date: 2017-04-08
+    time: 7:30pm
+    title: "[House Concert](https://www.facebook.com/events/1745278342469199)"
+    location: "Indianapolis, IN"
+
   - date: 2017-04-22
     time:
     title: "[Paper presentation for *Musica Scotica*: \"Robert Mackintosh of Tulliemet: A Statistical and Sociocultural Analysis\"](http://www.musicascotica.org.uk/conferences.shtml) (just Tim)"
@@ -216,3 +231,73 @@
     time: 7pm
     title: "[House concert](https://www.facebook.com/events/1400447276683173) (album sneak peek!)"
     location: "Lakeview East, Chicago, IL"
+
+  - date: 2017-05-16
+    time: 7pm
+    title: "[Indy Contra Dance](https://www.facebook.com/events/1868698520038059)"
+    location: "Indianapolis, IN"
+
+  - date: 2017-05-20
+    time: 5pm
+    title: "English Country Dancing"
+    location: "Garfield Park Conservatory, Chicago, IL"
+
+  - date: 2017-06-10
+    time: 7pm
+    title: "*A Gaelic Summer* preview with the [Bach and Beethoven Ensemble](http://www.bbensemble.org) for the [Bella Voce Gala](https://www.bellavoce.org/gala-benefit/)"
+    location: "Museum of Contemporary Art, Chicago, IL"
+
+  - date: 2017-07-01
+    time: 8pm
+    title: "[Montepelier Contra Dance](http://capitalcitygrange.org/event/contra-dance-eileen-thorsos-calling-tim-macdonald-jeremy-ward/)"
+    location: "Capital City Grange, Montepelier, VT"
+
+  - date: 2017-07-02
+    time: 2pm
+    title: "Workshop for the [Champlain Valley Scottish Fiddle Club](http://cvsfc.org/)"
+    location: "Middlebury, VT"
+
+  - date: 2017-07-02
+    time: 7pm
+    title: "Concert presented by the [Champlain Valley Scottish Fiddle Club](http://cvsfc.org/)"
+    location: "Middlebury, VT"
+
+  - date: 2017-07-03
+    time: Until July 7
+    title: "[ESCape Week](https://www.pinewoods.org/camp-sessions/session-schedule/) at Pinewoods"
+    location: "Pinewoods, MA"
+
+  - date: 2017-07-12
+    time:
+    title: "Concert with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "[Jalopy Theatre](https://www.jalopy.biz/), Brooklyn, NY"
+
+  - date: 2017-07-13
+    time: 8pm
+    title: "[Square Dance](https://www.threesbrewing.com/event/olh-brooklyn-square-dance-at-threes-at-franklin-kent/) with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "Threes Brewing at Franklin + Kent, Brooklyn, NY"
+
+  - date: 2017-07-15
+    time: 7pm
+    title: "[Concert](https://www.facebook.com/events/1053254624809982/) with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "[Hamlin Street Diner](https://www.facebook.com/hamlinstreetdiner/), 1334 Hamlin St NE, Washington, DC"
+
+  - date: 2017-07-18
+    time: 7pm
+    title: "House Concert with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "Blacksburg, VA"
+
+  - date: 2017-07-20
+    time: 7pm
+    title: "House Concert with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "Roanoke, VA"
+
+  - date: 2017-07-22
+    time:
+    title: "Concert with [Old Lazarus' Harp](https://www.facebook.com/OldLazarusHarp/)"
+    location: "[The Sloop Clearwater](http://www.clearwater.org/), Beacon, NY"
+
+  - date: 2017-07-23
+    time: Until June 30
+    title: "Teaching at [The Jink & Diddle School of Scottish Fiddling](http://www.jinkdiddle.com) (just Tim)"
+    location: "Valle Crucis, NC"

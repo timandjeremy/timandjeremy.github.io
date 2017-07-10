@@ -1,40 +1,10 @@
 <section id="about">
 <div class="container">
   <h3>Tim Macdonald</h3>
-  <p class="lead text smaller">
-  Praised for his "impressive and stylistically Scottish playing" (<a href="http://www.melindacrawford.com/">Dr. Melinda Crawford</a>)
-  and heralded as "a <i>real</i> fiddler" (<a href="http://www.bonnierideout.com">Bonnie Rideout</a>), <a href="http://www.tsmacdonald.com">
-  <b>Tim Macdonald</b></a> is a regular performer, composer, and teacher of Scottish-Baroque music.
-  </p>
-
-  <p class="lead text smaller">
-  Tim is the first and only US National Scottish Fiddling Champion to win on a Baroque violin, and his performances with
-  <a href="http://www.triosettecento.com/">Trio Settecento</a>, <a href="http://susiepetrov.com/">Susie Petrov</a>, <a href="http://newberryconsort.org/">
-  The Newberry Consort</a>, <a href="http://www.scotsduo.com/">Colyn Fischer</a>, the <a href="http://www.bbensemble.org/">Bach and Beethoven
-  Ensemble</a>, and many others have taken him from New York City's Frick Collection to the
-  villages of Indonesia, countless country and contra dances, Scotland's Blair Castle, and beyond. Recent projects include
-  helping to perform Scotland's first opera, <i>The Gentle Shepherd</i>, in full for the first time in over two centuries,
-  lecturing on applying the rhetorical ideas of the Scottish Enlightenment to modern fiddling, playing fully-staged
-  Elizabethan jigs, joining classical superstar <a href="http://rachelbartonpine.com/">Rachel Barton Pine</a> for an encore of
-  traditional tunes following her performance of Bruch's <i>Scottish Fantasy</i>, and serving as music and dancing master at a
-  thoroughly-researched recreation of a 1770s American tavern.  His radio appearances include WQXR classical radio (New
-  York City), BBC Scotland's <i>Take the Floor</i>, and WBOM radio (Rockford, IL).
-  </p>
-
-  <p class="lead text smaller">
-  In addition to performing, Tim runs a private teaching studio, is on faculty at <a href="http://www.jinkdiddle.com">
-  The Jink and Diddle School of Scottish Fiddling</a>, and has given lectures on historic Scottish music at Wheaton College (IL), The
-  National Centre of Excellence in Traditional Music (Plockton, Scotland), the Jane Austen Festival (Louisville, KY), and
-  countless gatherings of living historians. His compositions have won first place at both Scottish FIRE Composition
-  Competitions and are now available <a href="http://www.tsmacdonald.com/tunes.html">in print</a>. A "remarkably capable"
-  scholar as well as a performer (<a href="http://www.wheaton.edu/Academics/Faculty/B/Johann-Buis">Dr. Johann Buis</a>),
-  Tim was an Arthur and Lila Weinberg Fellow at the <a href="http://newberry.org/">Newberry Library</a> for the 2015-16
-  academic year, where he researched the period-correct performance of Scottish-Baroque music, focusing on the work of
-  Robert Mackintosh. He also plays the viola d'amore, harpsichord, piano, and English concertina, serves on the board of
-  the <a href="http://www.greatlakesbaroque.org/">Great Lakes Baroque</a> (with Artistic Director
-  <a href="http://www.joryvinikour.com/)">Jory Vinikour</a>) and on the leadership team of his local church, is an
-  award-winning software developer, and ran the Chicago Marathon for charity.
-  </p>
+  <div class="lead text smaller">
+    {% capture tim_bio %}{% include about_tim.md %}{% endcapture %}
+    {{ tim_bio | markdownify }}
+  </div>
 
   <hr class="small">
 

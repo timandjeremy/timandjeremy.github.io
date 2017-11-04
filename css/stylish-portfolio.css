@@ -295,8 +295,15 @@ a {
   margin: 1em;
 }
 
+.cdbaby-player {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .yt-subscribe-container {
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .yt-subscribe {
@@ -306,6 +313,10 @@ a {
 
 .subscribe-text {
   color: #333;
+}
+
+.buy-cd {
+  margin-bottom: 20px;
 }
 
 table.calendar {
@@ -392,4 +403,33 @@ table.calendar tr:nth-of-type(2n) {
 
 .contact-container {
   max-width: 750px;
+}
+
+.album-cover {
+  max-width: 500px;
+}
+
+.album-description p {
+  font-size: 17.5px;
+}
+
+.album-description .top-space {
+  margin-top: 10px;
+}
+
+.album-description .quote-attribution {
+  margin-left: 3em;
+  font-size: 17.5px;
+}
+
+.cdbaby-embed {
+  margin-top: 10px;
+}
+
+.buynow-image {
+  max-width: 200px;
+}
+
+.download-track {
+  margin-top: 10px;
 }

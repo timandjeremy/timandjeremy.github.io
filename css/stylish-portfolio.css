@@ -433,3 +433,8 @@ table.calendar tr:nth-of-type(2n) {
 .download-track {
   margin-top: 10px;
 }
+
+pre {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14pt;
+}

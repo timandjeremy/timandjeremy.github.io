@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+<h2 class="text-center">To Drive the Cold Winter Away</h2>
+<h3 class="text-center">Tim Macdonald &amp; Jeremy Ward</h3>
+
+<div class="col-md-6 col-md-offset-3">
+  <ul class="program">
+{% for piece in site.data.winter %}
+  {% include custom/program_item.html %}
+{% endfor %}
+  </ul>
+
+  <hr>
+
+  <div class="text-center"</div>
+    <h3>
+      <a href="/subscribe" target="_blank">Click here to sign up for our mailing list</a>
+    </h3>
+
+  </div>
+  <div class="pull-right">
+    <a href="https://www.patreon.com/bePatron?u=13865216" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  </div>
+</div>

@@ -442,3 +442,36 @@ pre {
 .indent {
   margin-left: 4em;
 }
+
+.program-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+ul.program {
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+li.separator {
+  text-align: center;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 24px;
+  font-weight: 100;
+}
+
+.program-text:nth-last-child(2):not(:only-child) {
+  border-right: none;
+}
+
+div.col-sm-6:nth-last-child(2):not(:only-child) > .program-text {
+  border-right: none;
+  margin-right: -18px;
+}
+
+div.col-sm-6:last-child:not(:only-child) > .program-text {
+  margin-left: -18px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

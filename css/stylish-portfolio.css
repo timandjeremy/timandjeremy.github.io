@@ -448,6 +448,13 @@ pre {
   font-weight: 500;
 }
 
+.program-author {
+  margin-left: 2em;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 300;
+}
+
 ul.program {
   margin-top: 40px;
   list-style-type: none;

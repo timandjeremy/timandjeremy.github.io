@@ -1,7 +1,10 @@
 <li class="program-item row">
 {% if piece.title %}
-<p class={% if piece.text %}"text-center"{% endif %}>
+<p class={% if piece.text and piece.translation %}"text-center"{% endif %}>
   <span class="program-title">{{ piece.title }}</span>
+  {% if piece.author %}
+  <span class="program-author">{{ piece.author}}</span>
+  {% endif %}
 </p>
 {% endif %}
 
@@ -9,7 +12,7 @@
   {% if piece.translation %}
   <div class="col-sm-6">
   {% else %}
-  <div class="col-sm-8 col-sm-offset-2">
+  <div class="col-sm-8">
   {% endif %}
   <pre class="program-text">{{ piece.text }}</pre>
 </div>

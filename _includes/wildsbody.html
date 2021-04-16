@@ -17,15 +17,27 @@
       <div class="row">
         <div class="col-xs-4 col-xs-offset-4 text-center">
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="WAJU3DL9ZCRBN">
-          <input type="image" class="buynow-image" src="/img/buynow.png" border="0" name="submit" alt="Buy The Wilds Now!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="WAJU3DL9ZCRBN">
+            <table>
+              <tr><td><input type="hidden" name="on0" value="Choose a Price">Choose a Price</td></tr><tr><td><select name="os0">
+                    <option value="Clearance Price (US) |">Clearance Price (US) | $10.00 USD</option>
+                    <option value="Clearance (International) |">Clearance (International) | $20.00 USD</option>
+                    <option value="Regular Price |">Regular Price | $20.00 USD</option>
+                    <option value="With extra donation, thank you! |">With extra donation, thank you! | $30.00 USD</option>
+                  </select> </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" class="buynow-image" src="/img/buynow.png" border="0" name="submit" alt="Buy The Wilds Now!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
         </div>
         <div class="row">
           <div class="col-xs-12 text-center download-track">
-            $20 + free US shipping
+            <p><strike>$20 + free US shipping</strike></p>
+            <p>
+              <em>On clearance for $10 + free US shipping! (Add $10 for international shipping)</em>
+            </p>
           </div>
         </div>
         <div class="row">

@@ -427,6 +427,7 @@ table.calendar tr:nth-of-type(2n) {
 }
 
 .buynow-image {
+  margin-top: 1em;
   max-width: 200px;
 }
 
